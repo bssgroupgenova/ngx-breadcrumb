@@ -1,7 +1,7 @@
-# ng5-breadcrumb
+# Ngx-breadcrumb
 
-This component is a fork from https://github.com/gmostert/ng5-breadcrumb.
-The component has been updated to work with Angular 5 and Angular CLI 1.5.
+This component is a fork from https://github.com/akiocloud/ng5-breadcrumb.
+The component has been updated to work with Angular 13.
 
 This component generates a breadcrumb trail, as you navigate to child routes using the @angular/router. It interprets the browser URL of a navigate request, 
 in the same way the component router does to match a path to a specific component, to build up a hierarchy of available parent/child routes for that destination.
@@ -18,15 +18,15 @@ Optionally uses bootstrap.css (v 3.x.x) for styling of some elements (although t
 ## Install
 Install the module via npm:
 
-    npm install ng5-breadcrumb --save
+    npm install ngx-breadcrumb --save
 
 ## Usage
 Import the this module into your module using forRoot()
 
-    import {Ng5BreadcrumbModule} from 'ng5-breadcrumb';
+    import {NgxBreadcrumbModule} from 'ngx-breadcrumb';
 
 	@NgModule({
-        imports: [Ng5BreadcrumbModule.forRoot()]
+        imports: [NgxBreadcrumbModule.forRoot()]
     })
     export class AppModule {
         ...
@@ -34,10 +34,10 @@ Import the this module into your module using forRoot()
 
 Alternatively you can import the this module into your module and manually provide its service
 
-	import {ng5BreadcrumbModule, BreadcrumbService} from 'ng5-breadcrumb';
+	import {ngxBreadcrumbModule, BreadcrumbService} from 'ngx-breadcrumb';
 
 	@NgModule({
-        imports: [ng5BreadcrumbModule],
+        imports: [ngxBreadcrumbModule],
         providers: [BreadcrumbService]
     })
     export class AppModule {
