@@ -1,5 +1,5 @@
 export default {
-    input: 'dist/index.js',
+    input: 'dist/out-tsc/index.js',
     output: {
       file: 'dist/bundles/breadcrumb.umd.js',
       format: 'umd',

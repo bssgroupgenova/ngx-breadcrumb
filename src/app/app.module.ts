@@ -1,11 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { Component1, Component2, Component3, Component4 } from './app.component';
-import { routingModule, appRoutingProviders }  from './app.routing';
-
-import { Ng5BreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
+import { AppComponent, Component1, Component2, Component3, Component4 } from './app.component';
+import { routingModule } from './app.routing';
+import { NgxBreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
 
 
 @NgModule({
@@ -14,12 +12,12 @@ import { Ng5BreadcrumbModule } from './components/breadcrumb/breadcrumb.module';
     Component1,
     Component2,
     Component3,
-    Component4    
+    Component4
   ],
   imports: [
     BrowserModule,
     routingModule,
-    Ng5BreadcrumbModule.forRoot()    
+    NgxBreadcrumbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
